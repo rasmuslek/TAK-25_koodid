@@ -1,0 +1,9 @@
+n1 = float(input("Sisesta esimene number: "))
+n2 = float(input("Sisesta teine number: "))
+n3 = float(input("Sisesta kolmas number: "))
+if n2 > n1 and n3:
+    print("Teine number on kõige suurem", n2)
+if n1 > n2 and n3:
+    print("Esimene number on kõige suurem", n1)
+if n3 > n2 and n1:
+    print("Kolmas number on kõige suurem", n3)
