@@ -1,0 +1,87 @@
+:root{
+    --bg: rgba(255,255,255, 0.96);
+    --text: rgba(255,255,255, 0.92);
+    --muted: rgba(255,255,255, 0.65);
+    --shadow: rgba(0,0,0,0.45);
+    --panel: rgba(255, 255, 255, 0.06);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    color: var(--text);
+    background: rgb(17, 17, 53);
+}
+.app{
+    width: min(920px, 92vw);
+    padding: 24px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive; 
+}
+.top{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+h1{
+    margin: 0 0 6px;
+    font-size: 50px;
+}
+.stats{
+    background: var(--shadow);
+    border: 3px solid rgb(99, 204, 99);
+    border-radius: 20px;
+    padding: 10px 12px;
+    min-width: 110px;
+}
+.label{
+    font-size: 12px;
+    color: var(--muted);
+}
+.value{
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 2px;
+}   
+.panel{
+    background: var(--panel);
+    border: 3px solid rgb(99, 204, 99);
+    border-radius: 35px;
+    padding: 23px;
+
+}
+.btn{
+    border: 0;
+    border-radius: 15px;
+    padding: 14px 10px;
+    color: rgb(0, 0, 0);
+    transition: transform 0.06s ease, filter 0.12s;
+    font-family: "Comic Sans MS", "Comic Sans", cursive; 
+}
+#clickBtn{
+    width: 100%;
+    padding: 22px 18px;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+.actions{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.toast{
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: black;
+    border: 1px solid green;
+}
+
+.btn-a{background: blue;}
+.btn-b{background: green;}
+.btn-c{background: yellow;}
+.btn-d{background: orangered;}
+.btn-e{background: pink;}
